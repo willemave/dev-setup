@@ -4,9 +4,16 @@
 
 mkdir -p ${HOME}/Development
 
-cp .vimrc ${HOME}/
-cp .gitconfig ${HOME}/
+# don't overwrite by default for SQ.
+if ! [ -n "${SQUARE_HOME+1}" ]; then
+  cp .gitconfig ${HOME}/
+  cp .gitconfig_ignore ${HOME}/
+fi
+
+cp .gitconfig_alias ${HOME}/
+
 cp .wgetrc ${HOME}/
+cp .vimrc ${HOME}/
 
 # completions
 brew install zsh-completions
@@ -26,7 +33,7 @@ cp zsh/zshrc ${HOME}/.zshrc
 cp zsh/aliases ${HOME}/.aliases
 cp -f zsh/zpreztorc ${HOME}/.zprezto/runcoms/
 cp -f zsh/prompt_willem.zsh "${HOME}/.zprezto/modules/prompt/functions/prompt_willem.zsh"
-ln -s "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zpreztorc" ~/.zpreztorc
+ln -sf "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zpreztorc" ~/.zpreztorc
 
 
 # manual shit
