@@ -80,6 +80,7 @@ brew cask install --appdir="~/Applications" iterm2
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
+brew cask install --appdir="/Applications" visual-studio-code
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
