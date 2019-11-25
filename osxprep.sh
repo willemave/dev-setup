@@ -18,3 +18,10 @@ echo "------------------------------"
 echo "Installing Xcode Command Line Tools."
 # Install Xcode command line tools
 xcode-select --install
+ 
+# perms
+cd /usr/local
+chmod -R +a "group:admin allow list,add_file,search,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,file_inherit,directory_inherit" *
+chgrp -R admin *
+chmod -R g+rwX *
+ls -lae .

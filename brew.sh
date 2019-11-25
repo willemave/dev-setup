@@ -49,12 +49,6 @@ brew install rg
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-# brew install ringojs
-# brew install narwhal
-
 # Install Python
 brew install python
 brew install python3
@@ -63,7 +57,6 @@ curl -sSL https://get.rvm.io | bash -s stable
 rvm install 2.5
 
 # Install font tools.
-brew tap bramstein/webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
@@ -77,14 +70,10 @@ brew link libxslt --force
 # Core casks
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
+brew cask install --appdir="~/Applications" karabiner-elements
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" visual-studio-code
-
-# Misc casks
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" slack
 
 # Remove outdated versions from the cellar.
 brew cleanup
