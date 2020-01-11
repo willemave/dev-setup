@@ -39,33 +39,6 @@ echo "" >> $BASH_PROFILE_PATH
 source $EXTRA_PATH
 
 ###############################################################################
-# Python 2 Virtual Enviroment                                                 #
-###############################################################################
-
-echo "------------------------------"
-echo "Setting up py2-data virtual environment."
-
-# Create a Python2 data environment
-mkvirtualenv py2-data
-workon py2-data
-
-# Install Python data modules
-pip install numpy
-pip install scipy
-pip install matplotlib
-pip install pandas
-pip install sympy
-pip install nose
-pip install unittest2
-pip install seaborn
-pip install scikit-learn
-pip install "ipython[all]"
-pip install bokeh
-pip install Flask
-pip install sqlalchemy
-pip install mysql-python
-
-###############################################################################
 # Python 3 Virtual Enviroment                                                 #
 ###############################################################################
 
@@ -90,8 +63,12 @@ pip install "ipython[all]"
 pip install bokeh
 pip install Flask
 pip install sqlalchemy
-#pip install mysql-python  # Python 2 only, use mysqlclient instead
 pip install mysqlclient
+
+brew install anaconda
+
+conda update --all
+
 
 ###############################################################################
 # Install IPython Profile
@@ -106,5 +83,4 @@ cp -r init/profile_default/ ~/.ipython/profile_default
 
 echo "------------------------------"
 echo "Script completed."
-echo "Usage: workon py2-data for Python2"
 echo "Usage: workon py3-data for Python3"

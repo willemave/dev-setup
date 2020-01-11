@@ -52,9 +52,9 @@ brew install wget --with-iri
 # Install Python
 brew install python
 brew install python3
-brew install java
+brew cask install java
 curl -sSL https://get.rvm.io | bash -s stable
-rvm install 2.5
+rvm install 2.6
 
 # Install font tools.
 brew install sfnt2woff
@@ -70,7 +70,6 @@ brew link libxslt --force
 # Core casks
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" karabiner-elements
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
