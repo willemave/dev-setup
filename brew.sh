@@ -33,7 +33,9 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
 # Install Bash 4.
-brew install zsh
+brew install zsh zsh-completions zsh-syntax-highlighting zsh-autosuggestions
+
+
 
 brew tap homebrew/versions
 
@@ -50,7 +52,6 @@ brew install rg
 brew install wget --with-iri
 
 # Install Python
-brew install python
 brew install python3
 brew cask install java
 curl -sSL https://get.rvm.io | bash -s stable
@@ -68,11 +69,23 @@ brew link libxml2 --force
 brew link libxslt --force
 
 # Core casks
-brew cask install --appdir="/Applications" alfred
-brew cask install --appdir="~/Applications" iterm2
+brew cask install alfred
+brew cask install iterm2
+brew cask install sublime-text
+brew cask install macbreakz
+brew cask install ngrok
 
-# Development tool casks
-brew cask install --appdir="/Applications" sublime-text
+# magent
+brew install mas
+mas install 441258766
+
+# Xcode. Will take forever to download, yes. Not needed by everyone.
+mas install 497799835
+
+# Spotify
+brew cask install spotify
+
+brew cask install whatsapp
 
 # Remove outdated versions from the cellar.
 brew cleanup
