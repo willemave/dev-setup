@@ -13,7 +13,6 @@ fi
 cp .gitconfig_alias ${HOME}/
 
 cp .wgetrc ${HOME}/
-cp .vimrc ${HOME}/
 
 # completions
 brew install zsh-completions
@@ -36,9 +35,9 @@ cp -f zsh/prompt_willem.zsh "${HOME}/.zprezto/modules/prompt/functions/prompt_wi
 ln -sf "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zpreztorc" ~/.zpreztorc
 
 # setup vxcode
-code --install-extension init/ginfuru.vscode-jekyll-snippets-0.8.7.vsix
-code --install-extension init/rokoroku.vscode-theme-darcula-1.1.0.vsix
-code --install-extension init/k--kato.intellij-idea-keybindings-0.2.24.vsix
+# code --install-extension init/ginfuru.vscode-jekyll-snippets-0.8.7.vsix
+# code --install-extension init/rokoroku.vscode-theme-darcula-1.1.0.vsix
+# code --install-extension init/k--kato.intellij-idea-keybindings-0.2.24.vsix
 
 # manual shit
 # install packages manager for sublime
