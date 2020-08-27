@@ -33,14 +33,4 @@ cp zsh/aliases ${HOME}/.aliases
 cp -f zsh/zpreztorc ${HOME}/.zprezto/runcoms/
 cp -f zsh/prompt_willem.zsh "${HOME}/.zprezto/modules/prompt/functions/prompt_willem.zsh"
 ln -sf "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zpreztorc" ~/.zpreztorc
-# cp init/ssh_config ~/.ssh/config
-
-# setup vxcode
-# code --install-extension init/ginfuru.vscode-jekyll-snippets-0.8.7.vsix
-# code --install-extension init/rokoroku.vscode-theme-darcula-1.1.0.vsix
-# code --install-extension init/k--kato.intellij-idea-keybindings-0.2.24.vsix
-
-# manual shit
-# install packages manager for sublime
-# install "Dracula Color Scheme"
-# select dracula in iTerm
+cp .tmux.conf ~/.tmux.conf
