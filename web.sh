@@ -18,7 +18,9 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install node
+brew install nvm 
+
+nvm install node
 
 # Remove outdated versions from the cellar.
 brew cleanup

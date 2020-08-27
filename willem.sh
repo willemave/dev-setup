@@ -33,6 +33,7 @@ cp zsh/aliases ${HOME}/.aliases
 cp -f zsh/zpreztorc ${HOME}/.zprezto/runcoms/
 cp -f zsh/prompt_willem.zsh "${HOME}/.zprezto/modules/prompt/functions/prompt_willem.zsh"
 ln -sf "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zpreztorc" ~/.zpreztorc
+# cp init/ssh_config ~/.ssh/config
 
 # setup vxcode
 # code --install-extension init/ginfuru.vscode-jekyll-snippets-0.8.7.vsix
